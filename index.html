@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My profile | Exciting skills fo your company</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/icon-font.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">about me</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#skills" class="navigation__link">my skills</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#footer" class="navigation__link">contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="primary-header">
+          <span class="primary-header--main">I'm Fabrice irankunda.</span>
+          <span class="primary-header--sub"> A software developer</span>
+        </h1>
+        <a href="#skills" class="btn btn--white btn--animated">get my skills</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about" id="about">
+        <div class="u-center-text">
+          <h1 class="secondary-heading">
+            about me
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="about-text">
+              <span class="about-text__mod">irankunda</span>Fabrice
+            </h3>
+            <p class="paragrah">
+              Fabrice is a full stacker web developer and mobile app developer,
+              I’m a strong believer in using research and testing to enhance my
+              problem solving skills because I’ve seen it make a world of a
+              difference! I enjoy working with people who are in different
+              fields as mine! (yes it’s true!) in cross functional teams because
+              different perspective leads to a well rounded solution.
+            </p>
+            <a href="#about" class="btn-read">Read more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="img-box">
+              <img src="img/profile-photo-1.jpg" alt="" class="profile-photo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="skills" class="section-skills">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="skill-box">
+              <svg class="skill-box__icon">
+                <use xlink:href="img/symbol.svg#icon-mobile2"></use>
+              </svg>
+              <h3 class="about-text about-text--uppercase">mobile app</h3>
+              <ul class="skill-box__list">
+                <li>Python</li>
+                <li>Java</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="skill-box">
+              <svg class="skill-box__icon">
+                <use xlink:href="img/symbol.svg#icon-cogs"></use>
+              </svg>
+              <h3 class="about-text about-text--uppercase">backend</h3>
+              <ul class="skill-box__list">
+                <li>Nodejs/Express js</li>
+                <li>Python/Django</li>
+                <li>MongoDB & SQLlite</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="skill-box">
+              <svg class="skill-box__icon">
+                <use xlink:href="img/symbol.svg#icon-display"></use>
+              </svg>
+              <h3 class="about-text about-text--uppercase">frontend</h3>
+              <ul class="skill-box__list">
+                <li>HTML5,CSS3 & Bootstrap</li>
+                <li>JavaScript/Jquery</li>
+                <li>React.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__picture-box">
+        <figure class="footer__picture">
+          <img src="./img/profile-photo-1.jpg" alt="ME!" class="footer__img" />
+          <figcaption class="footer__picture-caption">Dev Fabu</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#skills" class="footer__link">My skills</a>
+              </li>
+              <li class="footer__item">
+                <a href="#about" class="footer__link">about me</a>
+              </li>
+              <li class="footer__item">
+                <a href="#footer" class="footer__link">contact me</a>
+              </li>
+            </ul>
+            <div class="social-media">
+              <div class="social-media__box">
+                <a
+                  href="https://github.com/fabriceIrankunda"
+                  class="social-media__link"
+                >
+                  <svg class="social-media__icon social-media__icon--small">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="social-media__box">
+                <a href="https://linkedin.com/in/irankunda-fabrice-5525731a9" class="social-media__link">
+                  <svg class="social-media__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-linkedin-with-circle"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="social-media__box">
+                <a
+                  href="https://twitter.com/IrankundaFabri7"
+                  class="social-media__link"
+                >
+                  <svg class="social-media__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-twitter-with-circle"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__paragraph">
+            I have 1+ years of industry experience working on innovative and
+            open minded project in Rwanda, If you are interested in
+            collaborating with me for your next project send me an email at
+            <span class="footer__email">irankundafabrice8@gmail.com.</span> I
+            quite enjoy making things easy. It's a big part of my job as a
+            software developer.
+          </p>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        Designed by Irankunda Fabrice, Copyright &copy; 2020.
+      </p>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="row row--popup">
+          <div class="col-1-of-2">
+            <h1 class="popup__heading">Irankunda Fabrice</h1>
+            <h2 class="popup__sec-heading">Junior developer</h2>
+            <p class="popup__paragraph">
+              I have 1+ years of industry experience working on innovative and
+              open minded project in Rwanda, If you are interested in
+              collaborating with me for your next project send me an email at
+              <span class="popup__email">irankundafabrice8@gmail.com.</span>
+              I quite enjoy making things easy. It's a big part of my job as a
+              software developer.
+            </p>
+          </div>
+          <div class="col-1-of-2">
+            <a href="#about" class="popup__close">&times;</a>
+            <div class="popup__img-box">
+              <img src="/img/profile.jpg" alt="My photo" class="popup__img" />
+            </div>
+          </div>
+        </div>
+        <div class="popup__subcontent">
+          <h2 class="popup__subtitle">Certificates:</h2>
+          <h3 class="popup__text">
+            Programming Workshop for scientists in Africa 2019 (Python Workshop
+            completion)
+          </h3>
+          <h3 class="popup__text">
+            Completion of fullstack developer course at udemy 2020
+          </h3>
+          <h3 class="popup__text">CCNA Certificate of completion</h3>
+          <h2 class="popup__subtitle">Education:</h2>
+          <h3 class="popup__text">
+            Bachelor's degree in computer and software engineering
+          </h3>
+          <h4 class="popup__text-sub">UR-College Of Science And Technology</h4>
+          <h5>2018-2021</h5>
+          <h2 class="popup__subtitle">Languages:</h2>
+          <div class="popup__lang-container">
+            <div class="popup__langbox">
+              <span class="popup__lang popup__lang--1">&nbsp;</span>
+              <h3 class="popup__lang-text">English</h3>
+            </div>
+            <div class="popup__langbox">
+              <span class="popup__lang popup__lang--2">&nbsp;</span>
+              <h3 class="popup__lang-text">French</h3>
+            </div>
+            <div class="popup__langbox">
+              <span class="popup__lang popup__lang--3">&nbsp;</span>
+              <h3 class="popup__lang-text">Kiswahili</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+      </div>
+
+      I have 4+ years of industry experience working with innovative and open minded companies in Barcelona, Mumbai and Bangalore. 
+      If you are interested in collaborating with me for your next project send me an email at
+      I quite enjoy making things easy. It's a big part of my job as an interaction designer.
+
+      Say hello!
+      I am ready to reply.
+      Feel free to drop me a message or email me at hello@mrinali.co
+
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+          Col 2 of 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+          Col 2 of 4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+          Col 3 of 4
+        </div>
+      </div>
+    </section> -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
