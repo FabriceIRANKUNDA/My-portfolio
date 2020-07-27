@@ -1,0 +1,14 @@
+.about-text {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  &__mod {
+    letter-spacing: 0.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 2px;
+    border-bottom: 2px solid $color-sub-main;
+  }
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

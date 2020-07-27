@@ -1,0 +1,29 @@
+.skill-box {
+  padding: 2rem;
+  background-color: rgba($color-text-light, 1);
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 6rem rgba($color-black, 0.7);
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  &__icon {
+    height: 4rem;
+    transform: translateX(-1.5rem);
+    @include respondToAll(port-tab) {
+      transform: translateX(-0.8rem);
+    }
+    @media screen and (max-width: 18.75em) {
+      transform: translateX(-5.9rem);
+    }
+  }
+}

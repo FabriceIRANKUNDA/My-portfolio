@@ -1,0 +1,24 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 10rem 0;
+  // margin-top: -20vh;
+
+  @include respondToAll(port-tab) {
+    padding: 12rem 0;
+  }
+}
+
+.section-skills {
+  padding: 12rem 8rem;
+  background-color: rgba($color-main, 0.85);
+
+  @include respondToAll(port-tab) {
+    padding: 12rem 5rem;
+  }
+  // margin-top: -12rem;
+  // clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  // transform: skewY(-5.8deg);
+  // & > * {
+  //   transform: skewY(5.8deg);
+  // }
+}

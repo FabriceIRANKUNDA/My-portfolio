@@ -1,0 +1,88 @@
+.btn {
+  &:link,
+  :visited {
+    text-decoration: none;
+    padding: 1rem 3.5rem;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: all 0.2s;
+    position: relative;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    font-weight: 700;
+    // &::after {
+    //   transform: scaleX(1.4) scaleY(1.6);
+    //   opacity: 0;
+    // }
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
+    color: $color-sub-main;
+    background-color: $color-text-light;
+    &::after {
+      background-color: $color-text-light;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    border-radius: 5rem;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-read {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 0.7rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-sub-main;
+    border-bottom: 1px solid $color-sub-main;
+    transition: all 0.2s;
+    margin-top: 5rem;
+    @include respondToAll(port-tab) {
+      transform: translateX(10rem);
+    }
+    @include respondToAll(phone) {
+      transform: translateX(0);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    background-color: $color-main;
+    color: $color-text-light;
+    @include respondToAll(port-tab) {
+      transform: translate(10rem, -0.2rem);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    @include respondToAll(port-tab) {
+      transform: translate(10rem, 0rem);
+    }
+  }
+}
