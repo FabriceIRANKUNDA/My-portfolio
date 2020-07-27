@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+::selection {
+  background-color: $color-black;
+  color: $color-text-light;
+}
+html {
+  font-size: 62.5%;
+
+  @include respondToAll(land-tab) {
+    //width < 1200?
+    font-size: 56.25%;
+  }
+  @include respondToAll(port-tab) {
+    //width < 900?
+    font-size: 50%;
+  }
+  @include respondToAll(big-screen) {
+    //width > 1800?
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  @include respondToAll(phone) {
+    padding: 0;
+  }
+}

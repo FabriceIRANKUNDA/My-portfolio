@@ -1,0 +1,20 @@
+.header {
+  height: 85vh;
+  background: linear-gradient(
+      to right bottom,
+      rgba($primary-color, 0.88),
+      rgba($secondary-color, 0.9)
+    ),
+    url("../img/header-photo.jpg");
+  // margin-bottom: 1rem;
+  // clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    text-transform: uppercase;
+  }
+}

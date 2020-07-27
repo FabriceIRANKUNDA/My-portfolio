@@ -1,0 +1,65 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding-top: 5rem;
+
+  &:not(:last-child) {
+    margin-bottom: $horizontal-space;
+  }
+
+  @include respondToAll(port-tab) {
+    max-width: 45rem;
+  }
+
+  @include clearfix;
+  .col-1-of-2 {
+    width: calc((100% - #{$vertical-space}) / 2);
+    float: left;
+
+    &:first-child {
+      padding-left: 5.5rem;
+    }
+    @include respondToAll(phone) {
+      padding-left: 0 !important;
+      text-align: center;
+    }
+  }
+
+  [class^="col-"] {
+    float: left;
+    &:not(:last-child) {
+      margin-right: $vertical-space;
+      @include respondToAll(port-tab) {
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
+    }
+    @include respondToAll(port-tab) {
+      width: 100% !important;
+    }
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - (2 * #{$vertical-space})) / 3);
+  }
+  .col-2-of-3 {
+    width: calc(
+      2 * ((100% - (2 * #{$vertical-space})) / 3) + #{$vertical-space}
+    );
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - (3 * #{$vertical-space})) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(
+      2 * ((100% - (3 * #{$vertical-space})) / 4) + #{$vertical-space}
+    );
+  }
+  .col-3-of-4 {
+    width: calc(
+      3 * ((100% - (3 * #{$vertical-space})) / 4) + (2 * #{$vertical-space})
+    );
+  }
+}

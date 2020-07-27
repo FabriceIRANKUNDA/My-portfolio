@@ -1,0 +1,58 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+0 - 600px           : phones
+600px - 900px       : Portrait-tablets
+900px - 1200px      : Landscape-tablets
+1200px - 1800px     : is where our normal style apply
+1800+ px            : Big screens
+
+Breakpoint arguments choices:
+600px - phone
+900px - port-tab
+1200px - land-tab
+1800+ - big-screen
+
+ORDER: Base + Typography > general layouts + Grid layouts > Pages Layouts > Components + 
+1em = 16px
+*/
+
+@mixin respondToAll($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == port-tab {
+    //900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == land-tab {
+    //1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-screen {
+    //1800px
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
