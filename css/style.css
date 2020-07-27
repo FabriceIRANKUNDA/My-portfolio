@@ -266,7 +266,7 @@ body {
     cursor: pointer;
     transition: all 0.3s; }
   .popup__email:hover {
-    border-bottom: 3px solid #ac320a; }
+    border-bottom: 3px solid #e25222; }
   .popup__img-box {
     text-align: right; }
     @media only screen and (max-width: 56.25em) {
